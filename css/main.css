@@ -248,46 +248,80 @@ html, body {
 /* Button */
 
 .button {
-    display: inLine-block;
-    height: 50px;
-    padding: 12px 28px;
-    border-radius: 5px;
-    background-color: var(--accent-red);
+    position: relative;
+    background-color: var(--black);
     color: var(--white);
-    letter-spacing: 0.15px;
-    font-size: 15px;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
     font-weight: 500;
-    transition: opacity 0.3s ease-in; 
+    padding: 10px 30px;
+    transition: 0.5s;
 }
 
 .button:hover {
-    opacity: 0.5;
+    letter-spacing: 0.25em;
+    background-color: var(--accent-red);
+    color: var(--accent-red);
+    box-shadow: 0 0 40px var(--accent-red);
 }
 
-.button:active {
+.button::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background-color: var(--black);
+}
+
+.button span {
     position: relative;
-    top: 1.3px;
+    z-index: 1;
 }
 
-.button__outline {
-    display: flex;
-    column-gap: 10px;
-    align-items: center;
-    height: 48px;
-    border-radius: 5px;
-    padding: 12px 20px;
-    border: 1px solid var(--black);
-    color: var(--black);
-    transition: opacity 0.3s ease-in;
+.button i {
+    position: absolute;
+    inset: 0; 
+    display: block;
+
 }
 
-.button__outline:hover {
-    opacity: 0.5;
+.button i::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: var(--black);
+    border: 2px solid var(--accent-red);
+    transition: 0.5s;
 }
 
-.button__outline:active {
-    position: relative;
-    top: 1.3px;
+.button:hover i::before {
+    left: 0%;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 45px 45px var(--accent-red);
+}
+
+.button i::after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 0%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: var(--black);
+    border: 2px solid var(--accent-red);
+    transition: 0.5s;
+}
+
+.button:hover i::after {
+    left: 100%;
+    transform: translateX(-50%) rotate(-45deg);
+    box-shadow: 45px -45px var(--accent-red);
 }
 
 /* Projects */
