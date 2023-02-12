@@ -2,7 +2,5 @@ main.css - /*
 font-family: 'DM Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
--
 
-/*натисни F12 - і зайди в панель розробника, щоб побачити рамку, яку наверстав.*/
 
