@@ -135,6 +135,7 @@ html, body {
 
 .nav-list__link:hover {
     opacity: 0.5px;
+    color: var(--accent-red);
 }
 
 .nav-list__link:active {
