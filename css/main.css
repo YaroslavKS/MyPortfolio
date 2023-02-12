@@ -250,7 +250,8 @@ html, body {
 
 .button {
     position: relative;
-    background-color: var(--black);
+    top: 15px;
+    background-color: var(--silver);
     color: var(--white);
     text-decoration: none;
     text-transform: none;
