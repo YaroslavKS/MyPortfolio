@@ -71,6 +71,16 @@ html, body {
     text-align: center;
 }
 
+.title-1-1 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--title-1);
+    text-align: center;
+}
+
 .title-2 {
     margin-bottom: 20px;
     font-size: 40px;
@@ -95,6 +105,7 @@ html, body {
     background-color: var(--dark-bg);
     color: var(--header-txt);
     letter-spacing: normal;
+    z-index: 2;
 }
 
 .nav-row {
