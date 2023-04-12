@@ -1,6 +1,0 @@
-main.css - /*
-font-family: 'DM Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
-
-
